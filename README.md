@@ -1,16 +1,16 @@
-Package ~colorbox~
+Package `colorbox`
 ==================
-This package provides ~tcolorboxes~ designed to stand out and to contain
-source code. The package currently supports ~minted~ only. (PR welcomed! :D)
+This package provides `tcolorboxes` designed to stand out and to contain
+source code. The package currently supports `minted` only. (PR welcomed! :D)
 
 Quick view
 ----------
-~codebox~ provides 1 environment (~codebox~) and 3 commands (~setmintedcodebox~,
-~newcodeboxedmintedfile~ and ~code~).
+`codebox` provides 1 environment (`codebox`) and 3 commands (`setmintedcodebox`,
+`newcodeboxedmintedfile` and `code`).
 
 Please see the file demo.pdf (TODO) for broader information.
 
-### ~codebox~
+### `codebox`
 This environment simply creates the box with the given parameters:
 
 ```latex
@@ -19,13 +19,13 @@ This environment simply creates the box with the given parameters:
 \end{codebox}
 ```
 
-### ~setmintedcodebox~
+### `setmintedcodebox`
 TODO
 
-### ~newcodeboxedmintedfile~
+### `newcodeboxedmintedfile`
 TODO
 
-### ~code~
+### `code`
 Creates a small inline box a la GitHub to make code snippets inside sentences a bit fancier.
 
 Requirements
