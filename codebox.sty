@@ -81,6 +81,15 @@
 \newcommand{\codebox@linenosstyle}{%
   \renewcommand{\theFancyVerbLine}{\ttfamily\textcolor{codebox@linenos}{\scriptsize \arabic{FancyVerbLine}}}}
 
+% \begin{mintedcodebox}[<codebox options>]
+\newenvironment{mintedcodebox}[1][]{%
+  \begin{codebox}[#1]
+    \usemintedstyle{\codebox@mintedstyle}% % default xcode
+    \codebox@mintedoptions%
+    \codebox@linenosstyle%
+    \small%
+  }{\end{codebox}}
+
 \newcommand{\setmintedcodebox}[2]{%
   \BeforeBeginEnvironment{#1}{%
     \begin{codebox}[title=#1,icon=\faCode,#2]
